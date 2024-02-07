@@ -11,10 +11,6 @@
   transition: 250ms ease;
   position: relative;
 
-  @media screen and (max-width: 768px) {
-    font-size: 16px;
-  }
-
   &::before {
     content: "";
     position: absolute;
@@ -35,5 +31,13 @@
 
   &:hover {
     color: var(--clrAccent);
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+
+    &::before {
+      bottom: -4px;
+    }
   }
 }
