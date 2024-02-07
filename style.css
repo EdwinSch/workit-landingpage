@@ -1,0 +1,31 @@
+/* --- RESET --- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* --- ROOT VARIABLES --- */
+:root {
+  --fontHead: "Fraunces", serif;
+  --fontBody: "Manrope", sans-serif;
+  --clrPrimary: #24053e;
+  --clrSecondary: #584d62;
+  --clrAccent: #44ffa1;
+  --clrLight: #fcf8ff;
+
+  --inspect: solid red 1px;
+  --transition: 250ms ease;
+}
+
+/* --- MAIN CSS --- */
+body {
+  min-height: 100vh;
+  font-family: var(--fontBody);
+  background-color: #ffffff;
+}
+
+/* --- MOBILE RESPONSIVE --- */
+@media screen and (max-width: 450px) {
+  /* some class */
+}
