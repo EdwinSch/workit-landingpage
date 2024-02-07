@@ -13,19 +13,152 @@
   --clrSecondary: #584d62;
   --clrAccent: #44ffa1;
   --clrLight: #fcf8ff;
+  --clrWhite: #ffffff;
 
   --inspect: solid red 1px;
   --transition: 250ms ease;
 }
 
-/* --- MAIN CSS --- */
+/* --- MAIN & UTILS --- */
 body {
   min-height: 100vh;
   font-family: var(--fontBody);
-  background-color: #ffffff;
+  background-color: var(--clrWhite);
 }
 
-/* --- MOBILE RESPONSIVE --- */
-@media screen and (max-width: 450px) {
-  /* some class */
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.action-btn {
+  display: block;
+  width: auto;
+  min-height: 60px;
+  padding: 0 35px;
+  font-family: var(--fontBody);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--clrPrimary);
+  background-color: var(--clrAccent);
+  border: 2px solid var(--clrAccent);
+  cursor: pointer;
+  transition: var(--transition);
+
+  &:hover {
+    background-color: transparent;
+    color: var(--clrAccent);
+  }
+}
+
+/* --- HEADER --- */
+header {
+  height: 80px;
+  padding: 0 160px;
+  background-color: var(--clrPrimary);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  .logo-light {
+    width: 95px;
+  }
+
+  .apply-btn {
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--clrWhite);
+    font-family: var(--fontBody);
+    font-weight: 600;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--clrAccent);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0 20px;
+  }
+}
+
+/* --- HERO --- */
+.hero {
+  position: relative;
+  height: 630px;
+  padding: 80px 10px 0 10px;
+  background-color: var(--clrPrimary);
+  border-radius: 0px 0px 100px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  overflow: hidden;
+
+  & h1 {
+    color: var(--clrWhite);
+    text-align: center;
+    font-family: var(--fontHead);
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 600;
+
+    & span {
+      text-decoration: 4px solid underline var(--clrAccent);
+      text-underline-offset: 10px;
+    }
+  }
+
+  .phone-img {
+    margin-top: 10px;
+    width: 750px;
+  }
+
+  .pattern-left {
+    position: absolute;
+    top: 50px;
+    left: -140px;
+  }
+
+  .pattern-right {
+    position: absolute;
+    right: -50px;
+    bottom: 250px;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 450px;
+
+    & h1 {
+      font-size: 60px;
+      line-height: 60px;
+
+      & span {
+        text-underline-offset: 6px;
+      }
+    }
+
+    .pattern-left {
+      left: -220px;
+    }
+
+    .pattern-right {
+      right: -100px;
+      bottom: 120px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    & h1 {
+      font-size: 40px;
+      line-height: 40px;
+
+      & span {
+        text-underline-offset: 4px;
+      }
+    }
+  }
 }
