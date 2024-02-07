@@ -1,5 +1,6 @@
 .apply-btn {
   font-size: 18px;
+  height: 40px;
   line-height: 32px;
   color: var(--clrWhite);
   font-family: var(--fontBody);
@@ -19,9 +20,8 @@
     position: absolute;
     width: 100%;
     height: 8px;
-    border-radius: 4px;
     background-color: #44ffa1;
-    bottom: -6px;
+    bottom: -5px;
     left: 0;
     transform-origin: left;
     transform: scaleX(1);
