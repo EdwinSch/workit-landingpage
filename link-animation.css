@@ -1,0 +1,39 @@
+.apply-btn {
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--clrWhite);
+  font-family: var(--fontBody);
+  font-weight: 600;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 250ms ease;
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #44ffa1;
+    bottom: -6px;
+    left: 0;
+    transform-origin: left;
+    transform: scaleX(1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:hover::before {
+    transform-origin: right;
+    transform: scaleX(0);
+  }
+
+  &:hover {
+    color: var(--clrAccent);
+  }
+}

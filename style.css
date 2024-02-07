@@ -76,22 +76,6 @@ header {
     width: 95px;
   }
 
-  .apply-btn {
-    font-size: 18px;
-    line-height: 32px;
-    color: var(--clrWhite);
-    font-family: var(--fontBody);
-    font-weight: 600;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    transition: var(--transition);
-
-    &:hover {
-      color: var(--clrAccent);
-    }
-  }
-
   @media screen and (max-width: 768px) {
     padding: 0 20px;
   }
@@ -275,10 +259,15 @@ header {
     .info-component-wrapper {
       flex-direction: column;
       text-align: center;
+      gap: 0;
 
       .number {
         min-width: 50px;
         min-height: 50px;
+      }
+
+      & h2 {
+        margin: 20px 0 20px 0;
       }
     }
   }
