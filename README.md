@@ -1,7 +1,20 @@
-### Main Title
+## Workit Landing Page
 
-## Sub Heading/Title
+This project is a single landing page for a (mocked) company/service. Just a small portfolio piece using plain HTML and CSS with a lot of positioning.
 
-Lorem Ipsum
+### Live Demo
 
-🚀 [SOME LINK](https://google.com)
+🚀 [Deployed App](endearing-flan-44b020.netlify.app/)
+
+#### 🛠️ Build with
+
+- HTML
+- CSS
+
+#### 💻 Run this project
+
+```
+git clone [repo]
+npm install
+npm run dev
+```
