@@ -4,7 +4,7 @@ This project is a single landing page for a (mocked) company/service. Just a sma
 
 ### Live Demo
 
-🚀 [Deployed App](endearing-flan-44b020.netlify.app/)
+🚀 [Deployed App](https://edwinsch.github.io/workit-landingpage/)
 
 #### 🛠️ Build with
 
